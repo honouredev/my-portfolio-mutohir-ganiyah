@@ -1,0 +1,326 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    border: 2px solid rgb(149, 149, 236);
+    background-color: aqua;
+    /* width: 50px; */
+    padding: 10px 30px;
+}
+body {
+    background-color: rgb(117, 117, 175);
+}
+
+a {
+ text-decoration: none;   
+ /* color: blue; */
+ padding: 10px;
+}
+span p {
+  font-style: italic;
+  color: #d4c6c6;
+}
+img.menu {
+  display: none;
+  width: 10%;
+  height: 5%;
+  
+}
+img#close {
+  display: none;
+  margin-right: 50px;
+}
+header {
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(85, 85, 199);
+}
+header h1 {
+    margin-left: 20px;
+    color:rgb(94, 43, 34);
+}
+header nav a {
+  color: black;
+}
+header nav a:hover {
+  color: aquamarine;
+  padding: 10px;
+}
+
+header div#social img {
+    margin-left: 10px;
+    width: 30px;
+}
+header div#social img:hover {
+    cursor: pointer;
+    border: 2px dashed rgb(31, 18, 18);
+    width: 35px;
+}
+
+main {
+    margin: 10px;
+    margin-top: 30px;
+}
+main section#aboutme div{
+    background-color: rgb(197, 194, 243);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+main section#aboutme div *{
+    padding: 5px;
+}
+main section#aboutme img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(57, 57, 179);
+    margin-left: 20px;
+}
+section#tech {
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+section#tech div article div {
+    border: 2px solid rgb(133, 133, 248);
+    width: 45%;
+    margin: 5px;
+    margin-top: 40px;
+    padding: 10px;
+}
+section.project, div#work, section#projects {
+  margin: 20px 0px;
+  padding: 30px 5px;
+}
+section.project div#work {
+    margin: 20px;
+    text-align: center;
+}
+section.project div#work ul li {
+    padding: 10px;
+}
+
+section.project h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+section#projects article {
+    margin: 20px;
+    width: 32%;
+}
+div.mySlides img {
+  width: 80%;
+}
+div.caption p.stack {
+  font-style: italic;
+  font-size: 13px;
+  color: rgb(101, 247, 247);
+}
+section#Contact {
+    margin: auto;
+    text-align: center;
+}
+section#Contact p {
+  padding: 10px;
+  line-height: 25px;
+  word-spacing: 3px;
+}
+section#Contact div#myaddress *{
+  color: #d8d5d5;
+  padding: 8px;
+  margin: 10px;
+}
+section#Contact form {
+    margin: 10px;
+    padding: 15px;
+}
+section#Contact form input, textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+
+.container {
+    position: relative;
+  }
+  
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 20px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  .column img {
+    width: 100%;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  footer aside {
+    text-align: center;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 750px){
+    header.flex {
+      display: block;
+      text-align: center;
+    }
+
+    section#tech div article {
+      display: block;
+      width: 100%;
+    }
+    section#tech div article div {
+      margin: auto;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    img.menu {
+      display: inline-block;
+      position: absolute;
+      right: 0%;
+      top: 3%;
+      margin-right: 8px;
+      max-width: 10%;
+      
+  }
+  div.overlay {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      bottom: 0px;
+      background-color: hsla(0, 100%, 0%, 80%);
+      display: none;
+  }
+  nav a {
+    display: block;
+  }
+  nav{
+    background-color: white;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    padding-top: 50px;
+    z-index: 2;
+    display: block;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+  }
+    img#close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      max-width: 10%;
+      margin: 20px 0px 0px 10px;
+      width: 70%;
+    }
+    img#close:hover {
+      color: #fff;
+      background-color: #222;
+      padding: 10px;
+      width: 20%;
+    }
+    main section#aboutme {
+      flex-direction: column-reverse;
+    }
+    section#tech div article div {
+      display: block;
+      margin: 15px 0px;
+    }
+    section#tech div article div *{
+      margin: 5px 0px;
+    }
+    .prev, .next {
+      top: 25%;
+    } 
+    section#Contact div.flex {
+      display: block;
+    }
+  }
