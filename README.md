@@ -1,0 +1,1 @@
+This is a page that shows my work experience as well as past projects done. It also give an opportunity for users to contact me.
